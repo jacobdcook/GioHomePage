@@ -1,0 +1,128 @@
+/* giorod/src/pages/homeStyleSheet/home.css */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#clock-section {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#clock {
+  font-size: 100px;
+  color: #333;
+  transition: font-size 0.3s ease;
+}
+
+#date {
+  font-size: 30px;
+  color: #333;
+  transition: font-size 0.3s ease;
+}
+
+#divider {
+  position: absolute; /* or 'fixed' if you want it to stay in place on scroll */
+  left: 0;
+  right: 0;
+  width: 150vw; /* viewport width */
+  height: 1px; /* or your desired thickness */
+  background-color: #333; /* or any color you prefer */
+  top: 110%; /* adjust this value to position it vertically where you want */
+}
+
+
+#settings {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+#toggle {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  display: none;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+
+#toggle label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#toggle label:hover {
+  background-color: #f0f0f0;
+}
+
+/* Center the clock-section in the middle of the page */
+#clock-section {
+  position: absolute; /* Changed from 'fixed' to 'absolute' */
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Ensure text is centered */
+}
+
+
+
+/* Additional styles for centering and aesthetics */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure the .home div is the full height of the viewport */
+}
+
+
+#toggle label.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#resetDefaults {
+  color: #f00;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#size-adjustment {
+  display: flex;
+  align-items: center;
+}
+
+.size-button {
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+  font-size: 20px;
+  border-width: 2px;
+}
+
+.size-label {
+}
