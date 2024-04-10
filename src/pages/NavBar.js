@@ -36,19 +36,19 @@ const NavBar = () => {
       <nav>
         <div className={styles.navItemsContainer}>
           <div className={styles.navItem}>
-            <Link to="/" style={{color: 'inherit', textDecoration: 'inherit'}}>
+            <Link to="/home" style={{color: 'inherit', textDecoration: 'inherit'}}>
               <img src={recipes} alt="Recipes" className={styles.navImg}/>
               <p className={styles.navItemText}>Home</p>
             </Link>
           </div>
           <div className={styles.navItem}>
-            <Link to="/food-storage-tips" style={{color: 'inherit', textDecoration: 'inherit'}}>
+            <Link to="/favorites" style={{color: 'inherit', textDecoration: 'inherit'}}>
               <img src={plan} alt="mealplan" className={`${styles.foodStorageImg} ${styles.foodStorageImgPadding}`}/>
               <p className={styles.navItemText}>Favorites</p>
             </Link>
           </div>
           <div className={styles.navItem}>
-            <Link to="/Leftovers" style={{color: 'inherit', textDecoration: 'inherit'}}>
+            <Link to="/history" style={{color: 'inherit', textDecoration: 'inherit'}}>
               <img src={leftovers} alt="Leftovers" className={styles.navImg}/>
               <p className={styles.navItemText}>History</p>
             </Link>
